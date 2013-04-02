@@ -6,7 +6,7 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'bootstrap-sass', '2.1'
 gem 'json'
 
 # Gems used only for assets and not required
@@ -26,6 +26,7 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.11.0'
+  
 end
 
 
