@@ -1,7 +1,6 @@
 SampleApp::Application.routes.draw do
   
-  
-  root :to => "pages#home"
+  resources :admins
   get "admins/new"
 
   get "static_pages/home"
@@ -22,6 +21,7 @@ SampleApp::Application.routes.draw do
   match '/signin' => 'sessions#new'
   match '/signout' => 'sessions#destroy'
   match '/help'   =>  'static_pages#help'
+  match '/home'  =>'static_pages#home'
   match '/about'  => 'static_pages#about'
   match '/contact' => 'static_pages#contact'
   
