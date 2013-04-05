@@ -1,5 +1,5 @@
 class AdminsController < ApplicationController
-  before_filter :signed_in_user, :only=> [:edit, :update]
+  before_filter :signed_in_user
   
   
   def new

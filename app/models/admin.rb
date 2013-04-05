@@ -21,7 +21,7 @@ class Admin < ActiveRecord::Base
    private
 
     def create_remember_token
-      self.remember_token = SecureRandom.hex
+      #self.email = email.don
     end
     
     
