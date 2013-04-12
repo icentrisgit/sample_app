@@ -1,5 +1,8 @@
 SampleApp::Application.routes.draw do
   
+  resources :employees
+
+
   resources :admins
   get "admins/new"
 

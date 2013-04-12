@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130402172558) do
+ActiveRecord::Schema.define(:version => 20130412102715) do
 
   create_table "admins", :force => true do |t|
     t.string   "username"
@@ -21,5 +21,25 @@ ActiveRecord::Schema.define(:version => 20130402172558) do
   end
 
   add_index "admins", ["remember_token"], :name => "index_admins_on_remember_token"
+
+  create_table "employees", :force => true do |t|
+    t.string   "emp_id"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "gender"
+    t.string   "email_id"
+    t.text     "address"
+    t.integer  "phone_number"
+    t.integer  "pan_number"
+    t.integer  "bank_acc_no"
+    t.string   "designation"
+    t.string   "grossCTC"
+    t.date     "date_of_joining"
+    t.date     "date_of_birth"
+    t.date     "date_of_relieve"
+    t.string   "status"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
 end
